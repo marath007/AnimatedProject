@@ -1,4 +1,5 @@
- {
+
+{
     "cblAuthDelegate":{
         // Path to CBLAuthDelegate's database file. e.g. /home/ubuntu/Build/cblAuthDelegate.db
         // Note: The directory specified must be valid.
@@ -8,19 +9,19 @@
     },
     "deviceInfo":{
         // Unique device serial number. e.g. 123456
-        "deviceSerialNumber":"123456",
+        "deviceSerialNumber":"1234567",
         // The Client ID of the Product from developer.amazon.com
         "clientId":"",
         // Product ID from developer.amazon.com
         "productId":""
     },
-    "dcfDelegate":{
+    "capabilitiesDelegate":{
         // The endpoint to connect in order to send device capabilities.
         // This will only be used in DEBUG builds.
         // e.g. "endpoint": "https://api.amazonalexa.com"
-        // Override DCF Publish message to be sent out.
+        // Override the message to be sent out to the Capabilities API.
         // This will only be used in DEBUG builds.
-        // e.g. "overridenDcfPublishMessageBody": {
+        // e.g. "overridenCapabilitiesPublishMessageBody": {
         //          "envelopeVersion":"20160207",
         //          "capabilities":[
         //              {
@@ -42,7 +43,7 @@
         // Note: The directory specified must be valid.
         // The database file (alerts.db) will be created by SampleApp, do not create it yourself.
         // The database file should only be used for alerts (don't use it for other components of SDK)
-        "databaseFilePath":"/home/pi/sdk-folder/application-necessities/miscDatabase.db"
+        "databaseFilePath":"/home/pi/sdk-folder/application-necessities/alerts.db"
     },
     "settings":{
         // Path to Settings database file. e.g. /home/ubuntu/Build/settings.db
@@ -55,6 +56,13 @@
             // See https://developer.amazon.com/docs/alexa-voice-service/settings.html#settingsupdated for valid values.
             "locale":"en-US"
         }
+    },
+    "bluetooth" : {
+        // Path to Bluetooth database file. e.g. /home/ubuntu/Build/bluetooth.db
+        // Note: The directory specified must be valid.
+        // The database file (bluetooth.db) will be created by SampleApp, do not create it yourself.
+        // The database file should only be used for bluetooth (don't use it for other components of SDK)
+        "databaseFilePath":"/home/pi/sdk-folder/application-necessities/bluetooth.db"
     },
     "certifiedSender":{
         // Path to Certified Sender database file. e.g. /home/ubuntu/Build/certifiedsender.db
